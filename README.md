@@ -1,4 +1,3 @@
-Here's a more detailed and attractive **README.md** for your **NoOops** app with all key features, screenshots, and additional details:
 
 ---
 
