@@ -1,9 +1,51 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.NoOops" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.NoOops" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <!-- Default background color -->
+        <item name="android:windowBackground">@color/light_gray</item>
+        <!-- Button styles -->
+        <item name="buttonStyle">@style/ButtonPrimary</item>
+        <item name="materialButtonOutlinedStyle">@style/ButtonSecondary</item>
+        <item name="materialButtonStyle">@style/ButtonPrimary</item>
+        <!-- Input styles -->
+        <item name="textInputStyle">@style/EditTextStyle</item>
+        <!-- Card styles -->
+        <item name="cardViewStyle">@style/CardViewStyle</item>
     </style>
-
-    <style name="Theme.NoOops" parent="Base.Theme.NoOops" />
+    
+    <!-- Theme for splash screen -->
+    <style name="Theme.NoOops.Splash" parent="Theme.NoOops">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+    
+    <!-- Theme for dialogs -->
+    <style name="Theme.NoOops.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ButtonText</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ButtonText</item>
+    </style>
+    
+    <!-- Theme for bottom sheet dialogs -->
+    <style name="Theme.NoOops.BottomSheet" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
 </resources>

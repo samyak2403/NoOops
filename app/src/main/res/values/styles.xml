@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button styles -->
+    <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">@dimen/button_height_normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+    
+    <style name="ButtonSecondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height_normal</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="strokeColor">@color/primary</item>
+    </style>
+    
+    <style name="ButtonText" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:minHeight">@dimen/button_height_normal</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+    
+    <!-- Text styles -->
+    <style name="TextHeadline">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextTitle">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextLarge">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+    
+    <style name="TextMedium">
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+    
+    <style name="TextSmall">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+    
+    <style name="TextPrice">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextDiscount">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textDecoration">line-through</item>
+    </style>
+    
+    <!-- Card styles -->
+    <style name="CardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">@dimen/margin_medium</item>
+    </style>
+    
+    <style name="ProductCardStyle" parent="CardViewStyle">
+        <item name="contentPadding">0dp</item>
+    </style>
+    
+    <!-- Input styles -->
+    <style name="EditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+    
+    <!-- Divider style -->
+    <style name="DividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+    
+    <!-- Badge style -->
+    <style name="BadgeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/discount_badge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/badge_text_size</item>
+        <item name="android:padding">@dimen/margin_extra_small</item>
+    </style>
+</resources> 
